@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class OrderSystem {
     public static void main(String[] args) {
         System.out.println("Hello World !!");
@@ -39,11 +41,21 @@ public class OrderSystem {
         drinkMenu.addOption(gazedWaterDrink);
         drinkMenu.addOption(sodaDrink);
 
-        mainMenu.run();
-        drinkMenu.run();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Combien de menus souhaitez vous ? ");
+        int nbMenus;
+        do
+            nbMenus = sc.nextInt();
+        while (nbMenus < 0);
+
+        for (int i = 1; i <= nbMenus; i++) {
+            System.out.println("Préparer votre Menu "+i);
+            mainMenu.run();
+            drinkMenu.run();
+            System.out.println("================");
+        }
 
 
-        System.out.println("================");
         //mainMenu.displayAllChosen(); // fixme bugged function in Menu , to correct
         //drinkMenu.displayAllChosen();
     }
