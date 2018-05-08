@@ -2,8 +2,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Menu {
-    private ArrayList<Option> options = new ArrayList<>();
-    private Option chosenOption = null;
+    private ArrayList<Option> options = new ArrayList<>(); // a Menu is basically a list of option
+    private Option chosenOption = null; //  here it is the cption chosen by the user, by default : no option chosen
 
     void addOption(Option o)
     {

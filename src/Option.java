@@ -1,6 +1,6 @@
 public class Option {
     String name;
-    Menu subMenu = null;
+    Menu subMenu = null; // choosing a option in a Menu can provoque a subMenu for the user .  subMenu is a Menu
 
     public Option(String name) {
         this.name = name;

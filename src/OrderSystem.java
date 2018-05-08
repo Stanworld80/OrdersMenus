@@ -7,7 +7,6 @@ public class OrderSystem {
         Menu limitedSides = new Menu();
         Menu drinkMenu = new Menu();
 
-
         Option veganOption = new Option("Vegetarien");
         Option chickenOption = new Option("Poulet");
         Option beefOption = new Option("Boeuf");
