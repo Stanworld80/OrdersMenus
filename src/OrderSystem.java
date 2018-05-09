@@ -33,12 +33,12 @@ public class OrderSystem {
         chickenOption.setSubMenu(allSides);
         beefOption.setSubMenu(allSides);
 
-        Option flatWaterDrink = new Option("Eau Plate");
-        Option gazedWaterDrink = new Option("eau gazeuze");
+        Option stillWaterDrink = new Option("Eau Plate");
+        Option sparklingWaterDrink = new Option("eau gazeuze");
         Option sodaDrink = new Option("soda");
 
-        drinkMenu.addOption(flatWaterDrink);
-        drinkMenu.addOption(gazedWaterDrink);
+        drinkMenu.addOption(stillWaterDrink);
+        drinkMenu.addOption(sparklingWaterDrink);
         drinkMenu.addOption(sodaDrink);
 
         Scanner sc = new Scanner(System.in);
